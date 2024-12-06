@@ -1,5 +1,6 @@
 *.out
 *.pdf
+!logo-tp-ipp-white.pdf
 *.snm
 *.aux
 *.toc
