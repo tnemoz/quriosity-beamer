@@ -1,0 +1,38 @@
+\documentclass{beamer}
+\usetheme{quriosity}
+
+\title{Quriosity: I don't know what I'm doing}
+\subtitle{Subtitle}
+\author{Author 1, \underline{Author 2}}
+\titlegraphic{\includegraphics[width=2cm]{logo-tp-ipp-white}}
+\institute{Télécom Paris, QURIOSITY Team}
+\date{\today}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+    \section{Section 1}
+    \subsection{Subsection 1.1}
+    \begin{frame}{Simple frame}
+        Example of a frame.
+	    \begin{block}{Example of a block}
+		    Patate.
+	    \end{block}
+        \begin{equation}
+            \int_{-\infty}^{+\infty}\mathrm{e}^{-x^2}\,\mathrm{d}x=\sqrt{\pi}
+        \end{equation}
+        \begin{alertblock}{Test}
+            On tente des trucs
+        \end{alertblock}
+    \end{frame}
+    \section{Lists}
+    \begin{frame}{Deuxième frame}
+        \begin{itemize}
+            \item patate
+                \begin{itemize}
+                    \item patate aussi
+                \end{itemize}
+        \end{itemize}
+    \end{frame}
+\end{document}

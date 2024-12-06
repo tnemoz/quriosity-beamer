@@ -1,0 +1,42 @@
+\RequirePackage{tikz}
+
+\mode<presentation>
+
+% Title page
+\defbeamertemplate*{title page}{focus}{%
+    {%
+    }
+
+    \vspace{-3\baselineskip}
+    \begin{minipage}[b][0.35\paperheight]{\textwidth}
+        \vspace{\baselineskip}
+        \usebeamerfont{title}
+        \usebeamercolor[fg]{frametitle}
+        \centering{\inserttitle}
+    \end{minipage}
+
+    \begin{minipage}[t][0.1\paperheight]{\textwidth}
+        \usebeamerfont{subtitle}
+        \usebeamercolor[fg]{frametitle}
+        \centering{\insertsubtitle}
+    \end{minipage}
+
+    \begin{minipage}[t]{\textwidth}
+        \usebeamerfont{author}
+        \insertauthor
+    \end{minipage}
+
+    \begin{minipage}[t]{\textwidth}
+        \usebeamerfont{institute}
+        \insertinstitute
+    \end{minipage}
+
+    \vspace*{\baselineskip}
+    \begin{minipage}[t]{\textwidth}
+        \usebeamerfont{date}
+        \insertdate
+    \end{minipage}
+    \tikz[remember picture, overlay] {\node[anchor=south east, outer sep=0pt] at (current page.south east) {\inserttitlegraphic};}
+}
+
+\mode<all>
