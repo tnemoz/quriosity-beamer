@@ -1,13 +1,13 @@
 \mode<presentation>
 
 % Define colors
-% TODO: add 0.7 transparency
-\definecolor{main}{RGB}{255, 255, 255}
 \definecolor{quriorange}{RGB}{255, 149, 0}
 \definecolor{background}{RGB}{18, 18, 18}
+\definecolor{headerbackground}{RGB}{32, 32, 32}
+\colorlet{main}{white!70!background}
 
 % Set colors
-\setbeamercolor{normal text}{fg=main, bg=background}
+\setbeamercolor{normal text}{fg=main!70!background, bg=background}
 \setbeamercolor{alerted text}{fg=quriorange}
 
 \setbeamercolor{titlelike}{fg=quriorange, bg=background}
@@ -37,6 +37,8 @@
 
 \setbeamercolor{section in toc}{fg=main}
 \setbeamercolor{subsection in toc}{fg=main}
+\setbeamercolor{section in head/foot}{fg=quriorange, bg=headerbackground}
+\setbeamercolor{subsection in head/foot}{fg=quriorange, bg=headerbackground}
 \setbeamercolor{section number projected}{bg=main}
 \setbeamercolor{subsection number projected}{bg=main}
 

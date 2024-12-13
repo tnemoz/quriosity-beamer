@@ -5,34 +5,56 @@
 \subtitle{Attendez, on n'a toujours pas de logo?}
 \author{Author 1, \underline{Author 2}}
 \titlegraphic{\includegraphics[width=2cm]{logo-tp-ipp-white}}
-\institute{Télécom Paris, QURIOSITY Team}
+\institute{Télécom Paris, Quriosity Team}
 \date{\today}
 
 \begin{document}
-    \begin{frame}
+    \begin{frame}[plain]
         \maketitle
     \end{frame}
     \section{Section 1}
-    \subsection{Subsection 1.1}
-    \begin{frame}{Simple frame}
+    \subsection{Blocks}
+    \begin{frame}{Blocks}
         Example of a frame.
 	    \begin{block}{Example of a block}
-		    Patate.
+		    Potato.
 	    \end{block}
+        \begin{theorem}
+            Example of a theorem.
         \begin{equation}
-            \int_{-\infty}^{+\infty}\exp\left(-x^2\right)\,\mathrm{d}x=\sqrt{\pi}
+            \int_{-\infty}^{+\infty}\exp\left(-x^2\right)\,\mathrm{d}x=\sqrt{\pi}\,.
         \end{equation}
-        \begin{alertblock}{Test}
-            On tente des trucs
+        \end{theorem}
+        \begin{alertblock}{Example of an alertblock}
+            Probably something important.
         \end{alertblock}
     \end{frame}
-    \section{Lists}
-    \begin{frame}{Deuxième frame}
+    \subsection{Lists}
+    \begin{frame}{Itemize, Enumerate, Description}
         \begin{itemize}
-            \item patate
+            \item Test 1
                 \begin{itemize}
-                    \item patate aussi
+                    \item Test 1.1
                 \end{itemize}
         \end{itemize}
+        \begin{enumerate}
+            \item Test 1
+                \begin{itemize}
+                    \item Test 1.1
+                \end{itemize}
+        \end{enumerate}
+        \begin{description}
+            \item[Quriosity] is a team working on Quantum stuff
+            \item[Quantum] is weird
+        \end{description}
+    \end{frame}
+    \section{Text formatting}
+    \subsection{Alerted text}
+    \begin{frame}
+        \alert{Alerted text}
+    \end{frame}
+    \subsection{Emphasized text}
+    \begin{frame}
+        \emph{Emphasized text}
     \end{frame}
 \end{document}
