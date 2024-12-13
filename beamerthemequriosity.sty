@@ -14,7 +14,17 @@
 % TODO: add options
 
 % Packages
-
+\RequirePackage{fontspec}
+\setsansfont{blinkmacsystemfont}[
+  Path=./BlinkMacSystemFont/otf/,
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-regularitalic,
+  BoldItalicFont=*-bolditalic,
+]
+%\setsansfont{Comic Sans MS}
+\usefonttheme[onlymath]{serif}
 % Remove navigation symbols
 \setbeamertemplate{navigation symbols}{}
 
