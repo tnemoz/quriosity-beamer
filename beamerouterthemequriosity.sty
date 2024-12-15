@@ -1,9 +1,10 @@
+\useoutertheme{miniframes}
 
-\mode<presentation>
+\newcommand\dunderline[3][-1pt]{{%
+  \sbox0{#3}%
+  \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
 
-\defbeamertemplate*{headline}{quriosity theme}
-{%
-    \insertsubsectionnavigationhorizontal{\paperwidth}{}{}
-}
-
-\mode<all>
+\colorlet{shadedsection}{main!70!background}
+\setbeamertemplate{section in head/foot}{\dunderline{1px}{\insertsectionhead}}
+\setbeamertemplate{section in head/foot shaded}{\color{shadedsection!50!bg}\insertsectionhead}
+\setbeamertemplate{mini frame in other section}{\color{shadedsection!50!bg}\usebeamertemplate{mini frame in current section}}
